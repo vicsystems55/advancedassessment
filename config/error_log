@@ -1,0 +1,52 @@
+[02-Jul-2020 09:49:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home2/victechs/public_html/fgshlbapp/fgshlb/config/cache.php:21
+Stack trace:
+#0 {main}
+  thrown in /home2/victechs/public_html/fgshlbapp/fgshlb/config/cache.php on line 21
+[02-Jul-2020 09:49:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home2/victechs/public_html/fgshlbapp/fgshlb/config/cache.php:21
+Stack trace:
+#0 {main}
+  thrown in /home2/victechs/public_html/fgshlbapp/fgshlb/config/cache.php on line 21
+[02-Jul-2020 09:49:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home2/victechs/public_html/fgshlbapp/fgshlb/config/cache.php:21
+Stack trace:
+#0 {main}
+  thrown in /home2/victechs/public_html/fgshlbapp/fgshlb/config/cache.php on line 21
+[02-Jul-2020 09:49:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home2/victechs/public_html/fgshlbapp/fgshlb/config/cache.php:21
+Stack trace:
+#0 {main}
+  thrown in /home2/victechs/public_html/fgshlbapp/fgshlb/config/cache.php on line 21
+[02-Jul-2020 09:49:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home2/victechs/public_html/fgshlbapp/fgshlb/config/broadcasting.php:18
+Stack trace:
+#0 {main}
+  thrown in /home2/victechs/public_html/fgshlbapp/fgshlb/config/broadcasting.php on line 18
+[02-Jul-2020 09:49:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home2/victechs/public_html/fgshlbapp/fgshlb/config/broadcasting.php:18
+Stack trace:
+#0 {main}
+  thrown in /home2/victechs/public_html/fgshlbapp/fgshlb/config/broadcasting.php on line 18
+[02-Jul-2020 09:49:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home2/victechs/public_html/fgshlbapp/fgshlb/config/broadcasting.php:18
+Stack trace:
+#0 {main}
+  thrown in /home2/victechs/public_html/fgshlbapp/fgshlb/config/broadcasting.php on line 18
+[02-Jul-2020 09:49:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home2/victechs/public_html/fgshlbapp/fgshlb/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home2/victechs/public_html/fgshlbapp/fgshlb/config/app.php on line 16
+[02-Jul-2020 09:49:42 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home2/victechs/public_html/fgshlbapp/fgshlb/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home2/victechs/public_html/fgshlbapp/fgshlb/config/app.php on line 16
+[02-Jul-2020 09:49:42 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home2/victechs/public_html/fgshlbapp/fgshlb/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home2/victechs/public_html/fgshlbapp/fgshlb/config/app.php on line 16
+[02-Jul-2020 09:50:16 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home2/victechs/public_html/fgshlbapp/fgshlb/config/cache.php:21
+Stack trace:
+#0 {main}
+  thrown in /home2/victechs/public_html/fgshlbapp/fgshlb/config/cache.php on line 21
+[02-Jul-2020 09:50:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home2/victechs/public_html/fgshlbapp/fgshlb/config/broadcasting.php:18
+Stack trace:
+#0 {main}
+  thrown in /home2/victechs/public_html/fgshlbapp/fgshlb/config/broadcasting.php on line 18
+[02-Jul-2020 09:50:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home2/victechs/public_html/fgshlbapp/fgshlb/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home2/victechs/public_html/fgshlbapp/fgshlb/config/app.php on line 16

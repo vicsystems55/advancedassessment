@@ -1,0 +1,14 @@
+[02-Jul-2020 10:06:16 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Controller' not found in /home2/victechs/public_html/fgshlbapp/fgshlb/app/Http/Controllers/Auth/ForgotPasswordController.php on line 8
+[02-Jul-2020 10:06:17 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Controller' not found in /home2/victechs/public_html/fgshlbapp/fgshlb/app/Http/Controllers/Auth/RegisterController.php on line 12
+[02-Jul-2020 10:06:17 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Controller' not found in /home2/victechs/public_html/fgshlbapp/fgshlb/app/Http/Controllers/Auth/RegisterController.php on line 12
+[02-Jul-2020 10:06:17 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Controller' not found in /home2/victechs/public_html/fgshlbapp/fgshlb/app/Http/Controllers/Auth/RegisterController.php on line 12
+[02-Jul-2020 10:06:20 UTC] PHP Warning:  Unexpected character in input:  '' (ASCII=127) state=0 in /home2/victechs/public_html/fgshlbapp/fgshlb/app/Http/Controllers/Auth/LoginController.php on line 64
+[02-Jul-2020 10:06:20 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Controller' not found in /home2/victechs/public_html/fgshlbapp/fgshlb/app/Http/Controllers/Auth/LoginController.php on line 12
+[02-Jul-2020 10:06:20 UTC] PHP Warning:  Unexpected character in input:  '' (ASCII=127) state=0 in /home2/victechs/public_html/fgshlbapp/fgshlb/app/Http/Controllers/Auth/LoginController.php on line 64
+[02-Jul-2020 10:06:20 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Controller' not found in /home2/victechs/public_html/fgshlbapp/fgshlb/app/Http/Controllers/Auth/LoginController.php on line 12
+[02-Jul-2020 10:06:21 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Controller' not found in /home2/victechs/public_html/fgshlbapp/fgshlb/app/Http/Controllers/Auth/ConfirmPasswordController.php on line 9
+[02-Jul-2020 10:06:22 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Controller' not found in /home2/victechs/public_html/fgshlbapp/fgshlb/app/Http/Controllers/Auth/ConfirmPasswordController.php on line 9
+[02-Jul-2020 10:06:22 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Controller' not found in /home2/victechs/public_html/fgshlbapp/fgshlb/app/Http/Controllers/Auth/ConfirmPasswordController.php on line 9
+[02-Jul-2020 10:06:26 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Controller' not found in /home2/victechs/public_html/fgshlbapp/fgshlb/app/Http/Controllers/Auth/RegisterController.php on line 12
+[02-Jul-2020 10:07:10 UTC] PHP Warning:  Unexpected character in input:  '' (ASCII=127) state=0 in /home2/victechs/public_html/fgshlbapp/fgshlb/app/Http/Controllers/Auth/LoginController.php on line 64
+[02-Jul-2020 10:07:10 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Controller' not found in /home2/victechs/public_html/fgshlbapp/fgshlb/app/Http/Controllers/Auth/LoginController.php on line 12
