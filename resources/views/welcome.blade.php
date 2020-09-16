@@ -6,8 +6,8 @@
         <div class="container">
             <div class="header-body text-center mt-7 mb-7">
                 <div class="row justify-content-center">
-                    <div class="col-lg-5 col-md-6">
-                        <h1 class="text-dark display-3">
+                    <div class="bg-primary col-lg-5 col-md-6">
+                        <h1 class="text-white font-weight-900 display-1">
                             Welcome to Advanced Assessment Systems
 
 

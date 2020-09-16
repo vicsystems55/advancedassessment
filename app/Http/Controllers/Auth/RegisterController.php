@@ -65,7 +65,7 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
 
-        $regCode = "FGSHLB/2020/" .rand(111,999);
+        $regCode = "GSSKUJ/2020/" .rand(111,999);
 
         return User::create([
             'name' => $data['name'],

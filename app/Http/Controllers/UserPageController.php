@@ -63,9 +63,9 @@ class UserPageController extends Controller
         ]);
     }
 
-    public function loans()
+    public function new_session()
     {
-        return view('user.loans');
+        return view('user.new_session');
     }
 
     public function notifications()

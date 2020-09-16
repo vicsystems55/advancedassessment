@@ -7,7 +7,7 @@
         </button>
         <!-- Brand -->
         <a  class="navbar-bran mx--2" href="{{ route('home') }}">
-            <img width="220" height="60" src="{{ asset('argon') }}/img/brand/bluee.png" class="navbar-brand-im" alt="...">
+            <img width="170" height="100" src="{{ asset('argon') }}/img/brand/bluee.png" class="navbar-brand-im" alt="...">
         </a>
         <!-- User -->
         <ul class="nav align-items-center d-md-none">
@@ -98,13 +98,13 @@
                     <div class="collapse show" id="navbar-examples">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a class="nav-link {{ (request()->is('user/loans')) ? 'active' : '' }}" href="{{ route('user.loans')}}">
-                                    {{ __('Loans') }}
+                                <a class="nav-link {{ (request()->is('user/new_session')) ? 'active' : '' }}" href="{{ route('user.new_session')}}">
+                                    {{ __('Start New') }}
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link {{ (request()->is('user/wallet')) ? 'active' : '' }}" href="{{ route('user.wallet')}}">
-                                    {{ __('My Wallet') }}
+                                    {{ __('Practical History') }}
                                 </a>
                             </li>
                         </ul>

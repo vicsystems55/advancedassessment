@@ -108,6 +108,7 @@ Route::group(['middleware' => ['auth','user', 'verified'], 'prefix' => 'user'], 
 
     Route::get('/', 'UserPageController@home')->name('user');
 	Route::get('/profile', 'UserPageController@profile')->name('user.profile');
+	Route::get('/new_session', 'UserPageController@new_session')->name('user.new_session');
 	Route::get('/loan', 'UserPageController@loans')->name('user.loans');
 	Route::get('/notifications', 'UserPageController@notifications')->name('user.notifications');
 	Route::get('/wallet', 'UserPageController@wallet')->name('user.wallet');

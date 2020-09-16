@@ -1,27 +1,74 @@
-
-<div class="header bg-dark p-5  ">
+<div class="header bg-dark p-2  ">
     <div class="container-fluid">
-        <div class="header-body text-center">
-            <h3 class="text-white">Available Limit</h3>
-
-                @if($offdata)
-                <h1 class="text-white display-2">N {{$loan_schedule->approved_ceiling}}</h1>
-
-                <div class="container">
-                    <a href="{{ route('user.loans')}}"  class="btn btn-warning text-center btn-lg shadow">Apply Now</a>
+        <div class="header-body pb-5 pt-5">
+        
+            <!-- Card stats -->
+            <div class="row">
+                
+                <div class="col-xl-3 col-lg-6">
+                    <div class="card card-stats mb-4 mb-xl-0">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col">
+                                    <h5 class="card-title text-uppercase text-muted mb-0">Practical Taken</h5>
+                                    <span class="h2 font-weight-bold mb-0">2,356</span>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="icon icon-shape bg-warning text-white rounded-circle shadow">
+                                        <i class="fas fa-chart-pie"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mt-3 mb-0 text-muted text-sm">
+                                <span class="text-danger mr-2"><i class="fas fa-arrow-down"></i> 3.48%</span>
+                                <span class="text-nowrap">Since last week</span>
+                            </p>
+                        </div>
+                    </div>
                 </div>
-
-                @else
-
-                <h1 class="text-white display-2">Not Available</h1>
-
-                <div class="container">
-                    <a href="{{ route('user.profile')}}"  class="btn btn-secondary text-center btn-lg shadow">Update Profile</a>
+                <div class="col-xl-3 col-lg-6">
+                    <div class="card card-stats mb-4 mb-xl-0">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col">
+                                    <h5 class="card-title text-uppercase text-muted mb-0">Contractors</h5>
+                                    <span class="h2 font-weight-bold mb-0">924</span>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="icon icon-shape bg-yellow text-white rounded-circle shadow">
+                                        <i class="fas fa-users"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mt-3 mb-0 text-muted text-sm">
+                                <span class="text-warning mr-2"><i class="fas fa-arrow-down"></i> 1.10%</span>
+                                <span class="text-nowrap">Since yesterday</span>
+                            </p>
+                        </div>
+                    </div>
                 </div>
-
-                @endif
-
-            
+                <div class="col-xl-3 col-lg-6">
+                    <div class="card card-stats mb-4 mb-xl-0">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col">
+                                    <h5 class="card-title text-uppercase text-muted mb-0">Performance</h5>
+                                    <span class="h2 font-weight-bold mb-0">49,65%</span>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="icon icon-shape bg-info text-white rounded-circle shadow">
+                                        <i class="fas fa-percent"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mt-3 mb-0 text-muted text-sm">
+                                <span class="text-success mr-2"><i class="fas fa-arrow-up"></i> 12%</span>
+                                <span class="text-nowrap">Since last month</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
