@@ -11,7 +11,7 @@
             <div class="navbar-collapse-header d-md-none">
                 <div class="row">
                     <div class="col-6 collapse-brand">
-                        <a href="{{ route('home') }}">
+                        <a href="/">
                             <img src="{{ asset('argon') }}/img/brand/bluee.png">
                         </a>
                     </div>
@@ -32,9 +32,9 @@
             <ul class="navbar-nav ml-auto ">
                 
                 <li class="nav-item">
-                    <a class="nav-link nav-link-icon" href="{{ route('register') }}">
+                    <a class="nav-link nav-link-icon" href="/">
                         <i class="ni ni-circle-08 text-dark"></i>
-                        <span class="nav-link-inner--text text-dark">{{ __('Register') }}</span>
+                        <span class="nav-link-inner--text text-dark">{{ __('Home') }}</span>
                     </a>
                 </li>
                 

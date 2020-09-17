@@ -12,6 +12,10 @@ use App\UOfficialData;
 
 use App\LoanRepaymentSchedule;
 
+use App\Practical;
+
+use App\HookeVariation;
+
 use Auth;
 
 class UserPageController extends Controller
@@ -65,7 +69,28 @@ class UserPageController extends Controller
 
     public function new_session()
     {
-        return view('user.new_session');
+        $practical = DB::table('practicals')->where('status','active')->get();
+        return view('user.new_session',[
+            'practicals' => $practical
+        ]);
+    }
+
+    public function start_session()
+    {
+        $practical = DB::table('practicals')->where('status','active')->get();
+
+        $hookedata_count = DB::table('hooke_variations')->count();
+
+        
+
+        $rand_id = rand(1, $hookedata_count);
+
+        $hookedata = DB::table('hooke_variations')->where('id',$rand_id)->first();
+
+        return view('user.start_session',[
+            'practicals' => $practical,
+            'hookedata' => $hookedata
+        ]);
     }
 
     public function notifications()

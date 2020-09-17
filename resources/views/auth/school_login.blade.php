@@ -33,6 +33,20 @@
                                     </span>
                                 @endif
                             </div>
+
+                            <div class="form-group{{ $errors->has('school_code') ? ' has-danger' : '' }} mb-3">
+                                <div class="input-group input-group-alternative">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+                                    </div>
+                                    <input class="form-control{{ $errors->has('school_code') ? ' is-invalid' : '' }}" placeholder="{{ __('School Code') }}" type="text" name="school_code" >
+                                </div>
+                                @if ($errors->has('school_code'))
+                                    <span class="invalid-feedback" style="display: block;" role="alert">
+                                        <strong>{{ $errors->first('school_code') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
                             <div class="form-group{{ $errors->has('password') ? ' has-danger' : '' }}">
                                 <div class="input-group input-group-alternative">
                                     <div class="input-group-prepend">

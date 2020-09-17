@@ -12,9 +12,8 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call([
-            DemoUsers::class,
-            DemoLoanSchedules::class,
-            DemoLoanApplications::class,
+           
+            HookeValue::class,
             
             
         ]);

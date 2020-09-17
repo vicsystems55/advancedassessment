@@ -12,6 +12,8 @@ use App\AllSchool;
 
 use App\Practical;
 
+use App\HookeVariation;
+
 use Paystack;
 
 class AdminPageController extends Controller
@@ -70,6 +72,16 @@ class AdminPageController extends Controller
  
         return view('admin.practical_cataglogue',[
             'practicals' => $practical
+        ]);
+    }
+
+    public function prac_det($id)
+    {
+        $hookedata = DB::table('hooke_variations')->get();
+        $practical = DB::table('practicals')->where('id', $id)->first();
+        return view('admin.prac_det',[
+            'hookedata' => $hookedata,
+          'practical' => $practical
         ]);
     }
 

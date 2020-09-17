@@ -73,6 +73,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth','admin']], function()
 	Route::get('/practical_catalogue', 'AdminPageController@practical_catalogue')->name('admin.catalogue');
 	Route::get('/addpractical', 'AdminPageController@addpractical')->name('admin.addpractical');
 	Route::post('/regpractical', 'PracticalController@addpractical')->name('admin.regpractical');
+	Route::get('/prac_det/{id}', 'AdminPageController@prac_det')->name('admin.prac_det');
 
 	Route::get('/allschools', 'AdminPageController@allschools')->name('admin.allschools');
 	Route::get('/addschool', 'AdminPageController@addschool')->name('admin.addschool');
@@ -121,6 +122,10 @@ Route::group(['middleware' => ['auth','user', 'verified'], 'prefix' => 'user'], 
     Route::get('/', 'UserPageController@home')->name('user');
 	Route::get('/profile', 'UserPageController@profile')->name('user.profile');
 	Route::get('/new_session', 'UserPageController@new_session')->name('user.new_session');
+	Route::get('/start_session', 'UserPageController@start_session')->name('user.start_session');
+
+	Route::post('/submit_session', 'GradeSessionController@submit_session')->name('user.submit_session');
+
 	Route::get('/loan', 'UserPageController@loans')->name('user.loans');
 	Route::get('/notifications', 'UserPageController@notifications')->name('user.notifications');
 	Route::get('/wallet', 'UserPageController@wallet')->name('user.wallet');

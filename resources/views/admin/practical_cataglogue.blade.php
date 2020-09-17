@@ -46,7 +46,7 @@ $title='REPORT';
                     </td>
 
                     <td>
-                      <a target="_blank" class="btn btn-primary btn-sm" href="">edit</a>
+                      <a target="_blank" class="btn btn-primary btn-sm" href="{{ route('admin.prac_det', $practical->id)}}">edit</a>
                     </td>
                 </tr>
 
