@@ -20,12 +20,37 @@ $title='REPORT';
                 <th scope="col" class="sort" data-sort="name">s/n</th>
                 <th scope="col" class="sort" data-sort="budget">Title</th>
                 <th scope="col" class="sort" data-sort="status">Course</th>
+                <th scope="col" class="sort" data-sort="status">Level</th>
                 <th scope="col">More</th>
               
             </tr>
         </thead>
 
         <tbody class="list">
+
+        @foreach($practicals  as $practical)
+                <tr>
+                    <td>
+                        {{$loop->iteration}}
+                    </td>
+                    <td>
+                        {{$practical->title}}
+                    </td>
+
+                    <td>
+                        {{$practical->subject_area}}
+                    </td>
+
+                    <td>
+                      {{$practical->class}}
+                    </td>
+
+                    <td>
+                      <a target="_blank" class="btn btn-primary btn-sm" href="">edit</a>
+                    </td>
+                </tr>
+
+        @endforeach
 
         </tbody>
         

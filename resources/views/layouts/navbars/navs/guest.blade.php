@@ -1,6 +1,6 @@
 <nav class="navbar navbar-top navbar-horizontal navbar-expand-md navbar-dark bg-white">
     <div class="container px-4">
-        <a class="navbar-brand" href="{{ route('home') }}">
+        <a class="navbar-brand" href="/">
             <img style="width: 170px; height:100px;" class="img-responsive" src="{{ asset('argon') }}/img/brand/bluee.png" />
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-main" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,7 +41,7 @@
                
             </ul>
 
-            <ul class="navbar-nav align-items-center d-none d-md-flex">
+            <!-- <ul class="navbar-nav align-items-center d-none d-md-flex">
             <li class="nav-item dropdown">
                 <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <div class="media align-items-center">
@@ -74,7 +74,7 @@
                    
                 </div>
             </li>
-        </ul>
+        </ul> -->
         </div>
     </div>
 </nav>

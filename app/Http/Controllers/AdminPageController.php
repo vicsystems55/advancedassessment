@@ -10,6 +10,8 @@ use App\User;
 
 use App\AllSchool;
 
+use App\Practical;
+
 use Paystack;
 
 class AdminPageController extends Controller
@@ -62,8 +64,13 @@ class AdminPageController extends Controller
 
     public function practical_catalogue()
     {
+        $practical = DB::table('practicals')->where('status', 'active')->get();
+
+        
  
-        return view('admin.practical_cataglogue');
+        return view('admin.practical_cataglogue',[
+            'practicals' => $practical
+        ]);
     }
 
     public function addpractical()

@@ -15,6 +15,13 @@ class CreatePracticalsTable extends Migration
     {
         Schema::create('practicals', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->string('description');
+            $table->string('subject_area');
+            $table->string('class');
+            $table->string('session');
+            $table->string('term');
+            $table->string('status')->default('active');
             $table->timestamps();
         });
     }

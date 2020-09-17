@@ -9,11 +9,11 @@ $title='REPORT';
 @section('content')
     
     
-    <div class="container col-md-8 p-2">
+    <div class="container col-md-9 p-2">
 
     
 
-    <form method="post" action="{{ route('admin.addpractical')}}">
+    <form method="post" action="{{ route('admin.regpractical')}}">
             
                @csrf  
                 
@@ -24,32 +24,71 @@ $title='REPORT';
                     <div class="col-md-12">
                       <div class="form-group">
                         <label class="form-control-label" for="input-address">Practical Title</label>
-                        <input name="practical_title" id="input-address" class="form-control" placeholder="GSS *******"  type="text">
+                        <input name="title" id="input-address" class="form-control" placeholder="Example Hookes Law"  type="text">
                       </div>
                     </div>
 
                     <div class="col-md-12">
                       <div class="form-group">
                         <label class="form-control-label" for="input-address">Description</label>
-                        <input name="school_address" id="input-address" class="form-control" placeholder="School Location" type="text">
+                        <input name="description" id="input-address" class="form-control" placeholder="Describe a theory about this practical" type="text">
+                      </div>
+                    </div>
+
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label class="form-control-label" for="input-address">Subject Area</label>
+                        <select class="form-control" name="subject_area" id="">
+                            <option value="physics">Physics</option>
+                            <option value="chemistry">Chemistry</option>
+                            <option value="biology">Biology</option>
+                            
+                        </select>
                       </div>
                     </div>
 
 
                   </div>
                   <div class="row">
-                    <div class="col-lg-5">
+                    <div class="col-md-4">
                       <div class="form-group">
                         <label class="form-control-label" for="input-city">Class</label>
-                        <input name="lab_super" type="text" id="input-city" class="form-control" placeholder="Supervisor Name">
+                        <select class="form-control" name="class" id="">
+                            <option value="ss1">ss1</option>
+                            <option value="ss2">ss2</option>
+                            <option value="ss3">ss3</option>
+                            
+                        </select>
                       </div>
                     </div>
-                    <div class="col-lg-5">
+
+                    <div class="col-md-4">
                       <div class="form-group">
                         <label class="form-control-label" for="input-country">Session</label>
-                        <input name="contact_email" type="text" id="input-country" class="form-control" placeholder="Supervisor email" >
+                        <select class="form-control" name="session" id="">
+                            <option value="2020/2021">2020/2021</option>
+                            <option value="2020/2022">2020/2022</option>
+                           
+                            
+                        </select>
                       </div>
                     </div>
+
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label class="form-control-label" for="input-country">Term</label>
+                        <select class="form-control" name="term" id="">
+                            <option value="ss1">First</option>
+                            <option value="ss2">Second</option>
+                            <option value="ss3">Third</option>
+                            
+                        </select>
+                      </div>
+                    </div>
+                    
+                  </div>
+
+                  
                     
                   </div>
 
