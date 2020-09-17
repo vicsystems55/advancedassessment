@@ -35,7 +35,7 @@ class DemoUsers extends Seeder
     'email' => 'schooladmin@advancedassessment.com.ng',
     'email_verified_at' => '2020-07-01',
     'password' => Hash::make('passmyword2020'),
-    'role' => 'partners',
+    'role' => 'partner',
     'type' => 'standard',
     'payment_status' => 'unpaid',
     'status' => 'unverified',

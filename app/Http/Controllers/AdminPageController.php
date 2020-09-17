@@ -8,9 +8,7 @@ use Illuminate\Support\Facades\DB;
 
 use App\User;
 
-use App\UPersonalData;
-
-use App\LoanApplication;
+use App\AllSchool;
 
 use Paystack;
 
@@ -25,7 +23,7 @@ class AdminPageController extends Controller
     {
         $user_data = User::all();
 
-        return view('admin.home', compact('user_data'));
+        return view('admin.hom', compact('user_data'));
     }
 
     public function accounts_details($id)
@@ -39,25 +37,7 @@ class AdminPageController extends Controller
         ]);
     }
 
-    public function manage_accounts()
-    {
-        return view('admin.manage_accounts');
-    }
-
-    public function partners_account()
-    {
-        $user_data = DB::table('users')->where('role', 'partner')->get();
-
-        return view('admin.partners_account',[
-
-            'user_data' => $user_data
-        ]);
-    }
-
-    public function gurantors_accounts()
-    {
-        return view('admin.gurantors_account');
-    }
+  
 
     public function users_account()
     {
@@ -70,16 +50,57 @@ class AdminPageController extends Controller
 
     public function reports()
     {
-        $trans_data = Paystack::getAllTransactions();
-
-        $trans_data = json_decode(json_encode($trans_data), FALSE);
+        
 
        
 
         return view('admin.reports', [
 
-            'trans_data' => $trans_data
+           
         ]);
+    }
+
+    public function practical_catalogue()
+    {
+ 
+        return view('admin.practical_cataglogue');
+    }
+
+    public function addpractical()
+    {
+ 
+        return view('admin.addpractical');
+    }
+
+
+
+    public function allschools()
+    {
+        $allschooldata = DB::table('all_schools')->get();
+ 
+        return view('admin.allschools',[
+            'schools' => $allschooldata
+        ]);
+    }
+
+    public function addschool()
+    {
+ 
+        return view('admin.addschool');
+    }
+
+    
+
+    public function allstudents()
+    {
+ 
+        return view('admin.allstudents');
+    }
+
+    public function addstudent()
+    {
+ 
+        return view('admin.addstudent');
     }
 
     public function settings()

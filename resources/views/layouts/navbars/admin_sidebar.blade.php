@@ -6,7 +6,7 @@
         </button>
         <!-- Brand -->
         <a  class="navbar-bran mx--2" href="{{ route('home') }}">
-            <img width="220" height="60" src="{{ asset('argon') }}/img/brand/bluee.png" class="navbar-brand-im" alt="...">
+            <img width="170" height="90" src="{{ asset('argon') }}/img/brand/bluee.png" class="navbar-brand-im" alt="...">
         </a>
         <!-- User -->
         <ul class="nav align-items-center d-md-none">
@@ -88,20 +88,20 @@
                     <a class="nav-link " href="#navbar-examples" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-examples">
                        
                         <i class="fas fa-users text-success"></i>
-                        <span class="nav-link-text" >{{ __('Manage Accounts') }}</span>
+                        <span class="nav-link-text" >{{ __('Manage Profiles') }}</span>
                     </a>
 
                     <div class="collapse show" id="navbar-examples">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a class="nav-link {{ (request()->is('admin/partners')) ? 'active' : '' }}" href="{{ route('admin.partners')}}">
-                                    {{ __('Partner Accounts') }}
+                                <a class="nav-link {{ (request()->is('admin/allschools','admin/*' )) ? 'active' : '' }}" href="{{ route('admin.allschools')}}">
+                                    {{ __('Registered Institutions') }}
                                 </a>
                             </li>
                             
                             <li class="nav-item">
-                                <a class="nav-link {{ (request()->is('admin/users')) ? 'active' : '' }}" href="{{ route('admin.users')}}">
-                                    {{ __('Users Accounts') }}
+                                <a class="nav-link {{ (request()->is('admin/allstudents')) ? 'active' : '' }}" href="{{ route('admin.allstudents')}}">
+                                    {{ __('Students Profiles') }}
                                 </a>
                             </li>
                         </ul>
@@ -109,17 +109,9 @@
                 </li>
 
                 <li class="nav-item">
-                
-                    <a class="nav-link
-                    {{ (request()->is('admin/loan_applications')) ? 'active' : '' }}
-
-                    {{ (request()->is('admin/application_details')) ? 'active' : '' }}
-
-                    {{ (request()->is('admin/application_details/*')) ? 'active' : '' }}
-
-                     {{ (request()->is('admin/reports')) ? 'active' : '' }}" href="{{ route('admin.loan_applications')}}">
+                    <a class="nav-link {{ (request()->is('admin/practical_catalogue')) ? 'active' : '' }}" href="{{ route('admin.catalogue')}}">
                     <i class="fas fa-chart-area text-success"></i>
-                        {{ __('Loan Applications') }}
+                        {{ __('Catalogue') }}
                     </a>
                 </li>
 

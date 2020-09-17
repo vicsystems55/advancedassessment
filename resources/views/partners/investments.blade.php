@@ -10,7 +10,7 @@
        
     @if(Auth::user()->payment_status ==='unpaid')
 
-@include('partners.unpaid')
+
 
 
 @else

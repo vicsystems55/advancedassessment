@@ -70,6 +70,17 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth','admin']], function()
 
     Route::get('/', 'AdminPageController@home')->name('admin');
 	Route::get('/accounts', 'AdminPageController@manage_accounts')->name('admin.accounts');
+	Route::get('/practical_catalogue', 'AdminPageController@practical_catalogue')->name('admin.catalogue');
+	Route::get('/addpractical', 'AdminPageController@addpractical')->name('admin.addpractical');
+
+	Route::get('/allschools', 'AdminPageController@allschools')->name('admin.allschools');
+	Route::get('/addschool', 'AdminPageController@addschool')->name('admin.addschool');
+	Route::post('/addschool', 'AllSchoolController@addschool')->name('admin.regschool');
+
+	Route::get('/allstudents', 'AdminPageController@allstudents')->name('admin.allstudents');
+	Route::get('/addstudent', 'AdminPageController@addstudent')->name('admin.addstudent');
+
+
 	Route::get('/accounts/details/{id}', 'AdminPageController@accounts_details')->name('account.details');
 	Route::get('/partners', 'AdminPageController@partners_account')->name('admin.partners');
 	Route::get('/gurantors', 'AdminPageController@gurantors_account')->name('admin.gurantors');

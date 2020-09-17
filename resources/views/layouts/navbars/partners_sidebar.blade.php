@@ -6,7 +6,7 @@
         </button>
         <!-- Brand -->
         <a class="navbar-bran pt-0 mx--2" href="{{ route('home') }}">
-            <img width="220" height="60" src="{{ asset('argon') }}/img/brand/bluee.png" class="navbar-brand-im" alt="...">
+            <img width="170" height="100" src="{{ asset('argon') }}/img/brand/bluee.png" class="navbar-brand-im" alt="...">
         </a>
         <!-- User -->
         <ul class="nav align-items-center d-md-none">
@@ -88,7 +88,7 @@
                 <li class="nav-item">
                     <a class="nav-link {{ (request()->is('partners/investments')) ? 'active' : '' }}" href="{{ route('partners.investments')}}">
                     <i class="fas fa-chart-area text-warning"></i>
-                        {{ __('Investments') }}
+                        {{ __('Setup Practical') }}
                     </a>
                 </li>
                 
