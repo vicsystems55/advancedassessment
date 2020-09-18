@@ -48,6 +48,14 @@ class PartnersPageController extends Controller
             'reports' => $gradesession
         ]);
     }
+
+    public function print($id)
+    {
+        $grade = DB::table('grade_sessions')->where('id', $id)->first();
+        return view('partners.print',[
+            'report' => $grade
+        ]);
+    }
     
     
     /**

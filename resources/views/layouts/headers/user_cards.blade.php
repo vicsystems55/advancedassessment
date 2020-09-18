@@ -4,7 +4,7 @@
         
             <!-- Card stats -->
             
-                <h1>No Practicals Have been taken Yet</h1>
+                <h1 class="text-white">Welcome, {{Auth::user()->name}}</h1>
 
 
         </div>

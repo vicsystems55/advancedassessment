@@ -29,6 +29,8 @@
                             <th scope="col" class="sort" data-sort="budget">Student Name</th>
                             <th scope="col" class="sort" data-sort="status">Score</th>
                             <th scope="col" class="sort" data-sort="status">Practical Performed</th>
+                            <th scope="col" class="sort" data-sort="status">Status</th>
+                            <th scope="col" class="sort" data-sort="status">Date</th>
                             <th scope="col">More</th>
                         
                         </tr>
@@ -46,13 +48,20 @@
                             {{$report->user_name}}
                             </td>
                             <td>
-                            {{$report->score}}
+                           
                             </td>
                             <td>
-                            {{$report->user_id}}
+                           physics
+                            </td>
+
+                            <td>
+                            {{$report->status}}
                             </td>
                             <td>
-                            
+                            {{$report->created_at}}
+                            </td>
+                            <td>
+                                <a target="_blank" class="btn btn-primary btn-sm" href="{{ route('partner.print', $report->id)}}">print</a>
                             </td>
                         </tr>
 

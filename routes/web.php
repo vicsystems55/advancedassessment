@@ -107,6 +107,8 @@ Route::group(['middleware' => ['auth','partner', 'verified'], 'prefix' => 'partn
 	Route::get('/portfolio', 'PartnersPageController@portfolio')->name('partners.portfolio');
 	Route::get('/notifications', 'PartnersPageController@notifications')->name('partners.notifications');
 	Route::get('/reports', 'PartnersPageController@reports')->name('partners.reports');
+	Route::get('/print/{id}', 'PartnersPageController@print')->name('partner.print');
+
 	Route::get('/investments', 'PartnersPageController@investments')->name('partners.investments');
 	Route::post('/regCompanyProfile', 'PRegCompanyProfileController@store')->name('partners.regCompanyProfile');
 	Route::post('/finReport', 'PRegCompanyProfileController@finReport')->name('partners.finReport');
