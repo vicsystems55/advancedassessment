@@ -2,6 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\GradeSession;
+
+use DB;
+
 use Illuminate\Http\Request;
 
 class PartnersPageController extends Controller
@@ -39,7 +43,10 @@ class PartnersPageController extends Controller
 
     public function reports()
     {
-        return view('partners.reports');
+        $gradesession = DB::table('grade_sessions')->get();
+        return view('partners.reports',[
+            'reports' => $gradesession
+        ]);
     }
     
     

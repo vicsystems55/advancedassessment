@@ -39,6 +39,8 @@ class GradeSessionController extends Controller
 
         $gradesession->user_id = Auth::user()->id;
 
+        $gradesession->score = rand(44, 100);
+
         $gradesession->save();
 
         return redirect('/user/submit_success');
