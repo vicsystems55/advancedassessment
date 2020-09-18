@@ -124,7 +124,9 @@ Route::group(['middleware' => ['auth','user', 'verified'], 'prefix' => 'user'], 
 	Route::get('/new_session', 'UserPageController@new_session')->name('user.new_session');
 	Route::get('/start_session', 'UserPageController@start_session')->name('user.start_session');
 
-	Route::post('/submit_session', 'GradeSessionController@submit_session')->name('user.submit_session');
+	Route::post('/submit_session', 'GradeSessionController@submit_session')->name('user.grade_session');
+
+	Route::view('/submit_success', 'user.submit_success');
 
 	Route::get('/loan', 'UserPageController@loans')->name('user.loans');
 	Route::get('/notifications', 'UserPageController@notifications')->name('user.notifications');

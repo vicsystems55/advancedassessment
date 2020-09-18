@@ -79,10 +79,24 @@ class AdminPageController extends Controller
     {
         $hookedata = DB::table('hooke_variations')->get();
         $practical = DB::table('practicals')->where('id', $id)->first();
-        return view('admin.prac_det',[
-            'hookedata' => $hookedata,
-          'practical' => $practical
-        ]);
+
+        if($id==1){
+
+            return view('admin.prac_det',[
+                'hookedata' => $hookedata,
+              'practical' => $practical
+            ]);
+        }
+
+        elseif($id==2){
+            return view('admin.prac_titrate',[
+                'hookedata' => $hookedata,
+              'practical' => $practical
+            ]);
+        }
+
+        
+
     }
 
     public function addpractical()
