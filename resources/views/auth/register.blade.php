@@ -32,19 +32,7 @@
                                 @endif
                             </div>
 
-                            <div class="form-group{{ $errors->has('npi_number') ? ' has-danger' : '' }}">
-                                <div class="input-group input-group-alternative mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"><i class="ni ni-hat-3"></i></span>
-                                    </div>
-                                    <input class="form-control{{ $errors->has('npi_number') ? ' is-invalid' : '' }}" placeholder="{{ __('Enter Your NPI Number') }}" type="text" name="npi_number" value="{{ old('npi_number') }}"  >
-                                </div>
-                                @if ($errors->has('npi_number'))
-                                    <span class="invalid-feedback" style="display: block;" role="alert">
-                                        <strong>{{ $errors->first('npi_number') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
+                           
 
 
                             <div class="form-group{{ $errors->has('email') ? ' has-danger' : '' }}">

@@ -117,7 +117,7 @@ Route::group(['middleware' => ['auth','partner', 'verified'], 'prefix' => 'partn
     
 });
 
-Route::group(['middleware' => ['auth','user', 'verified'], 'prefix' => 'user'], function(){
+Route::group(['middleware' => ['auth','user'], 'prefix' => 'user'], function(){
 
     Route::get('/', 'UserPageController@home')->name('user');
 	Route::get('/profile', 'UserPageController@profile')->name('user.profile');

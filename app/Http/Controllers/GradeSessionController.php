@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use App\GradeSession;
 
+use App\WeightDeviation;
+
 use Auth;
 
 class GradeSessionController extends Controller
