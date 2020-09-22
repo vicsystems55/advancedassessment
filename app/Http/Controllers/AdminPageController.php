@@ -14,6 +14,8 @@ use App\Practical;
 
 use App\HookeVariation;
 
+use App\GradeSession;
+
 use Paystack;
 
 class AdminPageController extends Controller
@@ -55,11 +57,11 @@ class AdminPageController extends Controller
     public function reports()
     {
         
-
+        $grade_data = DB::table('grade_sessions')->get();
        
 
         return view('admin.reports', [
-
+            'grade_data' => $grade_data
            
         ]);
     }

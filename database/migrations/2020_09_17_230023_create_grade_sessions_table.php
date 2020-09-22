@@ -17,18 +17,30 @@ class CreateGradeSessionsTable extends Migration
             $table->id();
             $table->string('user_name');
             $table->bigInteger('user_id');
+
             $table->string('weight1');
             $table->string('length_change1');
+            $table->string('diff1');
+
             $table->string('weight2');
             $table->string('length_change2');
+            $table->string('diff2');
+
             $table->string('weight3');
             $table->string('length_change3');
+            $table->string('diff3');
+
             $table->string('weight4');
             $table->string('length_change4');
+            $table->string('diff4');
+
             $table->string('weight5');
             $table->string('length_change5');
+            $table->string('diff5');
+
             $table->string('weight6');
             $table->string('length_change6');
+            $table->string('diff6');
 
             $table->string('score')->nullable();
 

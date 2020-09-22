@@ -22,6 +22,7 @@ class CreatePracticalsTable extends Migration
             $table->string('session');
             $table->string('term');
             $table->string('status')->default('active');
+            
             $table->timestamps();
         });
     }
